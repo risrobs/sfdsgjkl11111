@@ -14,5 +14,37 @@
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
+    <div class="container" 
+             style="text-align: center; 
+                    margin-top: 5em;">
+          
+            <img src=
+"https://hicomm.bg//uploads/articles/202102/65964/mainimage-kak-da-se-prevrnete-v-kotka-vv-zoom.jpg"
+                 onclick="enlargeImg()" 
+                 id="img1" />
+            <br />
+            <br />
+            <br />
+            
+            <button onclick="resetImg()">Reset
+          </button>
+        </div>
+  
+     
+        <script>
+            img = document.getElementById("img1");
+            
+            function enlargeImg() {
+                img.style.width = "60%";
+                img.style.height = "auto";
+                img.style.transition = "width 0.5s ease";
+            }
+          
+            function resetImg() {
+                img.style.width = "40%";
+                img.style.height = "auto";
+                img.style.transition = "width 0.5s ease";
+            }
+        </script>
   </body>
 </html>
